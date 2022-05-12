@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  margin: 1rem;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+}
+.input-el {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+  border: 1px solid #5f9341;
+}
+.btn-container {
+  display: flex;
+  flex-direction: row;
+}
+.btn {
+  padding: 0.5rem 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 7rem;
+  text-align: center;
+  margin-right: 3px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.input-btn,
+.save-btn {
+  background: #5f9341;
+  color: white;
+  border: 2px solid #5f9341;
+}
+.delete-btn {
+  color: #5f9341;
+  border: 2px solid #5f9341;
+  background-color: white;
+}
+.unorderEl {
+  margin-top: 1rem;
+  list-style: none;
+}
+.unorderEl li {
+  margin-bottom: 0.5rem;
+}
+.unorderEl a {
+  color: #5f9341;
+}

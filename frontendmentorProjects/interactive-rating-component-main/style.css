@@ -1,0 +1,124 @@
+:root {
+  --clr-orange: hsl(25, 97%, 53%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-lgrey: hsl(217, 12%, 63%);
+  --clr-mgrey: hsl(216, 12%, 54%);
+  --clr-dblue: hsl(213, 19%, 18%);
+  --clr-vdblue: hsl(216, 12%, 8%);
+
+  --fs-100: 1.5rem;
+
+  --ff-overpass: "Overpass", sans-serif;
+
+  --fw-700: 700;
+  --fw-400: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.centering {
+  text-align: center;
+}
+.section-divider {
+  background-color: var(--clr-vdblue);
+  font-size: var(--fs-100);
+  color: var(--clr-white);
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: var(--ff-overpass);
+}
+.container {
+  border-radius: 10px;
+  max-width: 35rem;
+  padding: 3rem;
+  background-color: var(--clr-dblue);
+  min-height: 39rem;
+  transition: 0.2s all ease-in-out;
+}
+.star-icon {
+  background-color: hsl(216, 12%, 54%, 0.1);
+  padding: 1rem;
+  border-radius: 50%;
+}
+.question {
+  margin-block: 2rem 1rem;
+}
+.question-context,
+.regards-context {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  color: var(--clr-lgrey);
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.btn {
+  color: var(--clr-lgrey);
+  background-color: hsl(216, 12%, 54%, 0.1);
+  width: 4.5rem;
+  border: none;
+  height: 4.5rem;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  font-family: inherit;
+  font-weight: var(--fw-700);
+}
+.btn:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-orange);
+}
+.active {
+  color: var(--clr-white);
+  background-color: var(--clr-lgrey);
+}
+.submit-btn {
+  width: 100%;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--clr-white);
+  background-color: var(--clr-orange);
+}
+.submit-btn:hover {
+  color: var(--clr-orange);
+  background-color: var(--clr-white);
+}
+/* Rating result content */
+.thankyou-img {
+  margin-bottom: 1rem;
+}
+.answer {
+  background-color: hsl(216, 12%, 54%, 0.1);
+  width: 70%;
+  color: var(--clr-orange);
+  border-radius: 25px;
+  padding: 1rem 1.5rem;
+  margin: 2rem auto;
+}
+.regards {
+  margin-bottom: 1rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: var(--clr-vdblue);
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 500px) {
+  .container {
+    max-width: 40rem;
+  }
+}

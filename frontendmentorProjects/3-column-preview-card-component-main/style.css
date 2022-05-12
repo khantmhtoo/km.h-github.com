@@ -1,0 +1,110 @@
+:root {
+  --bg-orange: 31, 77%, 52%;
+  --bg-cyan: 184, 100%, 22%;
+  --bg-dcyan: 179, 100%, 13%;
+
+  --ff-deca: "Lexend Deca", sans-serif;
+  --ff-big: "Big Shoulders Display", cursive;
+
+  --clr-gray: 0, 0%, 95%;
+  --clr-ptext: 0, 0%, 100%, 0.75;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+}
+body {
+  font-family: var(--ff-deca);
+  color: hsl(var(--clr-gray));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: hsl(var(--clr-gray));
+}
+.card {
+  max-width: 85%;
+  margin: 3rem auto;
+  border-radius: 5px;
+}
+.card-container {
+  border-radius: 5px;
+}
+.card-info {
+  padding: 2rem 2.5rem;
+  min-height: 25rem;
+}
+.img {
+  padding: 0.5rem 0;
+}
+.sedans {
+  background-color: hsl(var(--bg-orange));
+  border-radius: 5px 5px 0 0;
+}
+.suvs {
+  background-color: hsl(var(--bg-cyan));
+}
+.luxury {
+  background-color: hsl(var(--bg-dcyan));
+  border-radius: 0 0 5px 5px;
+}
+.car-title {
+  font-family: var(--ff-big);
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+  font-size: 2.5rem;
+}
+.car-content {
+  color: hsl(var(--clr-ptext));
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  font-family: var(--ff-deca);
+  margin-top: 1.25rem;
+}
+.sedans .btn {
+  color: hsl(var(--bg-orange));
+}
+.suvs .btn {
+  color: hsl(var(--bg-cyan));
+}
+.luxury .btn {
+  color: hsl(var(--bg-dcyan));
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #000;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 810px) {
+  .card-container {
+    display: flex;
+    max-width: 46rem;
+  }
+  .btn {
+    margin-top: 4rem;
+  }
+  .sedans {
+    background-color: hsl(var(--bg-orange));
+    border-radius: 5px 0 0 5px;
+  }
+  .suvs {
+    background-color: hsl(var(--bg-cyan));
+  }
+  .luxury {
+    background-color: hsl(var(--bg-dcyan));
+    border-radius: 0 5px 5px 0;
+  }
+}

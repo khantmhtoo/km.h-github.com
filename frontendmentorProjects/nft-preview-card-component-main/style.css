@@ -1,0 +1,123 @@
+:root {
+  --clr-blue: hsl(215, 51%, 70%);
+  --clr-cyan: hsl(178, 100%, 50%);
+
+  --clr-mbg: hsl(217, 54%, 11%);
+  --clr-cbg: hsl(216, 50%, 16%);
+  --clr-line: hsl(215, 32%, 27%);
+  --clr-text: 0, 0%, 100%;
+
+  --fs-300: 2.45rem;
+  --fs-200: 1.8rem;
+  --fs-100: 1.6rem;
+
+  --ff-outfit: "Outfit", sans-serif;
+  --br-100: 0.8rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.content-container {
+  font-size: var(--fs-100);
+  font-family: var(--ff-outfit);
+  color: hsl(var(--clr-text));
+  background-color: var(--clr-mbg);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  background-color: var(--clr-cbg);
+  max-width: 35rem;
+  margin: 0 auto;
+  border-radius: var(--br-100);
+}
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+  padding-block: 2.5rem;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.context,
+.clock,
+.eth {
+  font-size: var(--fs-200);
+  line-height: 1.8;
+  color: hsl(var(--clr-text), 0.6);
+  font-weight: 300;
+}
+.content-img {
+  border-radius: var(--br-100);
+  width: 100%;
+}
+.content-img-middle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 297.5px;
+  height: 297.5px;
+  background-color: var(--clr-cyan);
+  border-radius: var(--br-100);
+  transform: translateY(-101%);
+  opacity: 0;
+}
+.content-title {
+  margin: 2rem 0;
+  font-size: var(--fs-300);
+  transition: 0.25s ease-in-out all;
+}
+.content-wrap:hover .content-title {
+  color: var(--clr-cyan);
+  cursor: pointer;
+}
+.content-wrap:hover .content-img-middle {
+  opacity: 1;
+  background-color: hsl(178, 100%, 50%, 0.5);
+}
+.eth {
+  color: var(--clr-cyan);
+}
+.creator {
+  display: flex;
+  padding-top: 2rem;
+  border-top: 1px var(--clr-line) solid;
+  align-items: center;
+}
+.creator p {
+  margin-left: 1.5rem;
+}
+.author-img {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid hsl(var(--clr-text));
+  border-radius: 50%;
+}
+.author {
+  color: var(--clr-blue);
+}
+.attribution {
+  font-size: var(--fs-100);
+  text-align: center;
+  background-color: var(--clr-mbg);
+  color: hsl(var(--clr-text));
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 376px) {
+  .card {
+    max-width: 35rem;
+  }
+}

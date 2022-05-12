@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Odia:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <!-- Stretch goal would be clip and menu -->
+    <main>
+      <div class="container">
+        <div>
+          <div class="sizer">
+            <h1 class="title">
+              Generate a <span class="highlight">random password</span>
+            </h1>
+          </div>
+          <p class="text">Never use an insecure password again.</p>
+        </div>
+
+        <div class="control-container">
+          <button class="gen-pass">
+            <img class="bolt" src="images/bolt.png" alt="" /> Generate passwords
+          </button>
+          <input
+            class="input-num-pass"
+            type="number"
+            name="numOfPass"
+            min="6"
+            max="20"
+            value="6"
+            required
+          />
+        </div>
+
+        <div class="pass-container">
+          <span class="pass"></span>
+          <span class="pass"></span>
+          <span class="pass"></span>
+          <span class="pass"></span>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+:root {
+  /* heading (Pure white) */
+  /* paragraph (transparent .75) */
+  /* stat heading (transparent .6) */
+  --clr-white: 0, 0%, 100%;
+  --clr-mbg: 233, 47%, 7%;
+  --clr-cbg: 244, 38%, 16%;
+  --clr-accent: 277, 64%, 61%;
+
+  --br-size: 5px;
+
+  --ff-inter: "Inter", sans-serif;
+  --ff-lexend: "Lexend Deca", sans-serif;
+  --fw-700: 700;
+  --fw-400: 400;
+  --fs-100: 1.5rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.section-divider {
+  font-size: var(--fs-100);
+  background-color: hsl(var(--clr-mbg));
+  color: hsl(var(--clr-white));
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--ff-inter);
+  padding: 3rem 0;
+}
+.card {
+  width: 34rem;
+  background-color: hsl(var(--clr-cbg));
+  border-radius: var(--br-size);
+  transition: all 0.25s ease-in-out;
+}
+.content-1 {
+  border-radius: var(--br-size) var(--br-size) 0 0;
+  background-image: url(images/image-header-mobile.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 24.99rem;
+  width: 100%;
+  background-color: hsl(277, 64%, 61%, 0.95);
+  background-blend-mode: darken;
+}
+.content-2 {
+  padding-bottom: 3rem;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.text-content {
+  padding-block: 3rem;
+  padding-inline: 1rem;
+}
+.title {
+  padding-bottom: 3rem;
+}
+.title-highlight {
+  color: hsl(var(--clr-accent));
+}
+.text-content p {
+  color: hsl(var(--clr-white), 0.6);
+  line-height: 1.6;
+  padding-inline: 0.75rem;
+}
+.info-content {
+  padding-inline: 1rem;
+}
+.info-content div:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.stats-val {
+  margin-bottom: 0.75rem;
+}
+.stats-info {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  color: hsl(var(--clr-white), 0.6);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  background-color: hsl(var(--clr-mbg));
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 1000px) {
+  .card {
+    width: 98.77rem;
+    display: flex;
+  }
+  .content-1 {
+    order: 2;
+    width: 50%;
+    height: auto;
+    border-radius: 0 var(--br-size) var(--br-size) 0;
+  }
+  .content-2 {
+    max-width: 40%;
+    order: 1;
+    text-align: left;
+    padding: 3rem 0;
+  }
+  .title {
+    padding-bottom: 2rem;
+  }
+  .text-content p {
+    padding: 0 0 2.5rem 0;
+    font-size: 1.3rem;
+    max-width: 90%;
+  }
+  .info-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .info-content div:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background: red;
+}
+.container {
+  background: #37d3c3;
+  padding: 1rem 2rem;
+  border: 2.5px solid black;
+}
+.clickme {
+  margin-bottom: 1rem;
+}
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background-color: rgb(185, 185, 185);
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  border: 2px solid rgb(185, 185, 185);
+}
+.btn:hover {
+  cursor: pointer;
+  border: 2px solid rgb(14, 255, 42);
+  background-color: #acd845;
+  color: white;
+}

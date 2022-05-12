@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Square+Peg&family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+<<<<<<< HEAD
+=======
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+>>>>>>> 56f1657 (Adding remade portfolio)
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./script.js" defer></script>
+
+    <title>Dev Khant</title>
+  </head>
+  <body>
+    <header id="header-bar" class="sticky">
+      <div class="header__container">
+        <!-- loGo - Expand based on size and do something -->
+        <div class="logo__sec">
+          <span class="logo">KM.H</span>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#project" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="toggle-btn">
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="container">
+        <h1 class="sec__title sec__title--intro">
+          WELCOME. I am Khant M. Htoo
+        </h1>
+        <p class="sec__subtitle sec__subtitle--hero">
+          Little information on me. I am a newly graduated Networking Student.
+          Due to my passion for programming, I began learning more indepth
+          aspect about it, which lead me to web developing.
+        </p>
+        <!-- Simple Image - Button in which interacts with the user -->
+        <!-- Click here kinda where if the user clicks it tells about the user -->
+        <!-- Play around make it interesting and unique in which it represents u and design wise -->
+        <button class="button__tag button__tag--all button__tag--hero">
+          More
+        </button>
+        <button class="button__tag button__tag--all button__tag--hero">
+          Hobbies
+        </button>
+        <button class="button__tag button__tag--all button__tag--hero">
+          Interests
+        </button>
+        <div class="social__container--hero">
+          <span class="sub__content--hero">Connect With Me</span>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a
+                href="https://www.linkedin.com/in/khant-m-htoo-771a0b161/"
+                class="social-list__link"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin footer__item"></i
+              ></a>
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link"
+                href="https://www.facebook.com/khant.blaz.9/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-facebook footer__item"></i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link"
+                href="https://www.linkedin.com/in/khant-m-htoo-771a0b161/"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img src="" alt="" />
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="about-me">
+      <h2 class="sec__title section__title--about">About Me</h2>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project" class="my__project">
+      <div class="my__project--container container">
+        <h2 class="sec__title sec__title--proj">Projects</h2>
+        <div class="button__tag--container">
+          <button class="button__tag button__tag--all">all</button>
+          <button class="button__tag button__tag--html">html</button>
+          <button class="button__tag button__tag--css">css</button>
+          <button class="button__tag button__tag--js">js</button>
+        </div>
+        <div class="proj__card--container"></div>
+      </div>
+    </section>
+
+    <!-- Contact Section  -->
+    <section id="contact" class="contact">
+      <h2 class="sec__title sec__title--contact">Contact Me</h2>
+      <div class="container">
+        <div class="form__container">
+          <form action="">
+            <input
+              type="text"
+              class="input__name"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              class="input__email"
+              placeholder="Your Email Address"
+              required
+            />
+            <textarea
+              type="subject"
+              id="subject"
+              class="input__subject"
+              placeholder="Subject..."
+              required
+            ></textarea>
+            <textarea
+              name="additional-info"
+              id="add-info"
+              class="input__additional"
+              placeholder="Enter your additional information here..."
+              required
+            ></textarea>
+            <input
+              class="form__submit--btn"
+              type="button"
+              value="Submit"
+              required
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="mailto:khantmhtoo1294@gmail.com" class="footer__link"
+        >khantmhtoo1294@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            href="https://www.linkedin.com/in/khant-m-htoo-771a0b161/"
+            class="social-list__link"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin footer__item"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.facebook.com/khant.blaz.9/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook footer__item"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/khant-m-htoo-771a0b161/"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

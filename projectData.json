@@ -1,0 +1,29 @@
+[
+  {
+    "name": "3 Column Preview",
+    "description": "Small interactive column preview of three different types of card",
+    "difficulty": 1,
+    "creator": "FrontEnd Mentor",
+    "tools": ["HTML", "CSS"],
+    "screenShot": "frontendmentorProjects/3-column-preview-card-component-main/screenshots/3screenSSFS.PNG",
+    "link": "frontendmentorProjects/3-column-preview-card-component-main/index.html"
+  },
+  {
+    "name": "Article-Preview",
+    "description": "Preview of a short article screen in both mobile and large screen",
+    "difficulty": 3,
+    "creator": "FrontEnd Mentor",
+    "tools": ["HTML", "CSS", "JS"],
+    "screenShot": "frontendmentorProjects/article-preview-component-master/screenshots/fullScreen.PNG",
+    "link": "frontendmentorProjects/article-preview-component-master/index.html"
+  },
+  {
+    "name": "Interactive Rating",
+    "description": "Interactive rating application by using JS DOM and JS to create a simple switch effects",
+    "difficulty": 3,
+    "creator": "FrontEnd Mentor",
+    "tools": ["HTML", "CSS", "JS"],
+    "screenShot": "frontendmentorProjects/interactive-rating-component-main/screenshots/initialState.PNG",
+    "link": "frontendmentorProjects/interactive-rating-component-main/index.html"
+  }
+]

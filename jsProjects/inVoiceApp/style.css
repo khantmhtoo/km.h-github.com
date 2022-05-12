@@ -1,0 +1,134 @@
+:root {
+  --clr-bg: #d1fae5;
+
+  --clr-bg-title: #0284c7;
+  --clr-btn: #34d399;
+  --clr-head: #d1fae5;
+  --clr-text: #a7f3d0;
+  --clr-text-content: #000;
+
+  --fs-400: 3rem;
+  --fs-350: 2.5rem;
+  --fs-300: 2.125rem;
+  --fs-200: 1.2rem;
+  --fs-100: 1rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+button {
+  font-size: 62.5%;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--clr-bg);
+  color: var(--clr-text-content);
+}
+/* Reusable Codes */
+.btn {
+  padding: 1rem;
+  width: 10rem;
+  font-size: var(--fs-100);
+  background-color: var(--clr-btn);
+  border: none;
+  border-radius: 5px;
+  color: var(--clr-text-content);
+  font-weight: bold;
+}
+.tags {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+.display {
+  color: transparent;
+}
+.remove {
+  position: absolute;
+  left: 10.5rem;
+  top: 20%;
+  padding: 0.5rem 1rem;
+  font-size: var(--fs-100);
+  background-color: transparent;
+  border: none;
+}
+.remove:hover {
+  cursor: pointer;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: var(--fs-300);
+  position: relative;
+}
+.task:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.task > span + span {
+  font-weight: normal;
+}
+.container {
+  background-color: #fff;
+  width: 35rem;
+  min-height: 52.6rem;
+}
+.title-head {
+  width: 100%;
+  background-color: var(--clr-bg-title);
+  text-align: center;
+  padding: 3rem 0;
+}
+.title {
+  margin-bottom: 1rem;
+  font-size: var(--fs-400);
+  color: var(--clr-head);
+}
+.title-context {
+  font-size: var(--fs-200);
+  color: var(--clr-text);
+  /* Change the font color slightly */
+}
+.inner-content {
+  width: 90%;
+  margin: 2rem auto 3rem;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.calc-content {
+  /* Maybe useful later */
+  font-size: var(--fs-200);
+}
+.task-container {
+  padding-bottom: 0.25rem;
+}
+.invoice-container {
+  /* Tweak margin later */
+  border-top: 2px solid black;
+  margin: 2rem 0 0.5rem 0;
+}
+.invoice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.invoice-sum {
+  font-size: var(--fs-350);
+  font-weight: bold;
+}
+.send-btn {
+  width: 100%;
+  margin-top: 1.5rem;
+  border: none;
+  font-size: var(--fs-200);
+}

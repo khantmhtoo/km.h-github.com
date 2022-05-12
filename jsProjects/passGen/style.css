@@ -1,0 +1,136 @@
+:root {
+  --clr-text: #ffffff;
+  --clr-text-p: #e0f2fe;
+  --clr-pass: #bae6fd;
+  --clr-special: #0ea5e9;
+  --clr-passcon: #374151;
+  --clr-container: #1f2937;
+  --clr-bg: #111827;
+
+  --ff-anek: "Anek Odia", sans-serif;
+
+  --fs-title: 3rem;
+  --fs-text: 1.8rem;
+
+  --fw-700: 700;
+  --fw-400: 400;
+
+  --br-100: 7px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: var(--clr-text);
+  font-size: var(--fs-text);
+  font-family: var(--ff-anek);
+  font-weight: var(--fw-400);
+  background-color: var(--clr-bg);
+}
+.container {
+  background-color: var(--clr-container);
+  margin: 0 auto;
+  width: 35rem;
+  padding: 3rem 3rem 0 3rem;
+  transition: 0.25s all ease-in-out;
+}
+/* Header */
+.sizer {
+  width: 24rem;
+  padding-top: 6rem;
+  font-size: var(--fs-title);
+  font-weight: var(--fw-700);
+}
+.title {
+  font-size: var(--fs-title);
+  font-weight: var(--fw-700);
+  line-height: 1.3;
+}
+.highlight {
+  color: var(--clr-special);
+}
+.text {
+  color: var(--clr-text-p);
+}
+/* Controllers */
+.control-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bolt {
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+.gen-pass {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  background-color: var(--clr-special);
+  padding: 1rem 2rem;
+  margin: 3rem 0;
+  border-radius: var(--br-100);
+  border: none;
+  transition: 0.25s all ease-in-out;
+}
+.gen-pass:hover {
+  background-color: #7dd3fc;
+  opacity: 0.95;
+  cursor: pointer;
+  color: #0c4a6e;
+}
+.input-num-pass {
+  height: 3.5rem;
+  width: 8rem;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+.input-num-pass:hover {
+  cursor: pointer;
+}
+.pass-container {
+  display: flex;
+  flex-direction: column;
+  border-top: solid white 1px;
+  padding: 3rem 0;
+  text-align: center;
+}
+.pass {
+  width: 100%;
+  height: 3.5rem;
+  content: "";
+  padding: 0.5rem;
+  border-radius: var(--br-100);
+  border: none;
+  letter-spacing: 1px;
+  color: var(--clr-pass);
+  background-color: var(--clr-passcon);
+}
+.pass:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 560px) {
+  .container {
+    width: 55rem;
+    height: 55rem;
+  }
+  .pass-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .pass {
+    width: 48%;
+  }
+}
