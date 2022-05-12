@@ -77,6 +77,10 @@ img {
   outline: 3px solid var(--clr-accent);
   outline-offset: 3px;
 }
+header {
+  border: none;
+  outline: none;
+}
 /* -------------------Reusable------------------- */
 .sec__title {
   text-align: center;
