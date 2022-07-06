@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0b2434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Karla", sans-serif;
+}
+main {
+  background-color: #f5f5f5;
+  min-height: 500px;
+  width: 500px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.die {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.die__container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+.die__num {
+  font-size: 2.5rem;
+}
+.die__num .active {
+  background-color: lightblue;
+  color: red;
+}
+.roll__btn {
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: skyblue;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: inherit;
+  font-size: 1.2rem;
+}
+.roll__btn:hover {
+  opacity: 0.5;
+}
+.roll__btn:focus {
+  outline: none;
+}
+.roll__btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.subtitle {
+  text-align: center;
+  margin-block: 1.125rem 2.5rem;
+  width: 75%;
+}
